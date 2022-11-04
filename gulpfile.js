@@ -56,7 +56,7 @@ const watcher = () => {
     gulp.watch('*.html').on('change', browserSync.reload);
     gulp.watch('src/js/scripts/*.js', gulpJs);
     gulp.watch('src/js/libs/*.js', libsJs);
-    gulp.watch('src/css/*.css', libsCss);
+    // gulp.watch('src/css/*.css', libsCss);
 }
 gulp.task('watch', watcher);
 
