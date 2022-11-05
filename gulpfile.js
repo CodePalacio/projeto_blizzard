@@ -32,7 +32,7 @@ const gulpJs = () => {
     return gulp.src('src/js/scripts/*.js')
     .pipe(concat('app.js'))
     .pipe(babel({
-        presets: ['babel/env']
+        presets: ['@babel/env']
     }))
     .pipe(uglify())
     .pipe(gulp.dest('src/js'))
