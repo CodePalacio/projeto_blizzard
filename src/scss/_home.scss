@@ -248,7 +248,86 @@
 }
 
 .s-download{
-    
+    width: 100%;
+    height: 85rem;
+    background: url("/imgs/background-section-download.png") no-repeat center center;
+    overflow: hidden;
+    background-size: cover;
+    .container{
+        position: relative;
+    }
+    .text-left{
+        width: 100%;
+        max-width: 39.3rem;
+        padding-top: 13.2rem;
+        padding-bottom: 28.5rem;
+        h2{
+            font-weight: 700;
+            font-size: 3.2rem;
+            line-height: 110.2%;
+            color: #FFFFFF;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        ul{
+            li{
+                display: flex;
+                align-items: center;
+                margin-top: 2.4rem;
+                .icon{
+                    width: 1.8rem;
+                    height: 1.8rem;
+                    @include flex(center,center,row);
+                    margin-right: 1.6rem;
+                }
+                p{
+                    font-size: 1.8rem;
+                    line-height: 178.2%;
+                    color: #828792;
+                }
+            }
+        }
+        a{
+            margin-top: 3.9rem;
+            margin-bottom: 4.7rem;
+            padding: 0 4rem;
+        }
+        .app{
+            width: 100%;
+            max-width: 27.1rem;
+            display: flex;
+            align-items: center;
+            p{
+                font-weight: 600;
+                font-size: 1.4rem;
+                line-height: 2.1rem;
+                color: #E5E5E5;
+                margin-left: 1.8rem;
+                a{
+                    font-size: 1.4rem;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .image{
+        position: absolute;
+        top: 9.6rem;
+        right: -27.5rem;
+        width: 100%;
+        max-width: 106.5rem;
+        height: 61rem;
+        .img-lg{
+            position: absolute;
+            animation: float 8s ease-in-out infinite;
+        }
+        .img-sm{
+            position: absolute;
+            right: 5.3rem;
+            top: 29.5rem;
+            animation: float 6s ease-in-out infinite;
+        }
+    }
 }
 
 @keyframes fadeUp {
