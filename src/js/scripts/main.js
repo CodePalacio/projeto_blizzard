@@ -14,6 +14,27 @@ const slide_hero = new Swiper('.slide-principal', {
         delay: 5000,
         disableOnInteraction: false,
     }
+});
+
+const allFilters = document.querySelectorAll('.js-nav-games li a');
+const tabPanel  = document.querySelectorAll('.tab-panel-games')
+
+allFilters.forEach((filter, index) => {
+    filter.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        allFilters.forEach(item => {
+            item.classList.remove('active');
+        })
+
+        tabPanel.forEach(tab => {
+            tab.classList.remove('active');
+        })
+
+        tabPanel[index].classList.add('active')
+        filter.classList.add('active');
+    })
 })
+
 
 
