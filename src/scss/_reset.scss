@@ -14,17 +14,17 @@ body{
 }
 
 body::-webkit-scrollbar {
-    width: 16px;               /* width of the entire scrollbar */
+    width: 12px;              
 }
-  
+
 body::-webkit-scrollbar-track {
-    background: $primary-black-dark;        /* color of the tracking area */
+    background: rgb(12, 12, 12);        
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: $primary-default;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 4px solid $primary-black-dark;  /* creates padding around scroll thumb */
+    background-color: $primary-default;    
+    border-radius: 20px;       
+
 }
 
 html,
