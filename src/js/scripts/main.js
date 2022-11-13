@@ -50,3 +50,29 @@ btnCloseModal.addEventListener('click', () => {
     tagHtml.classList.remove('show-modal')
 });
 
+const btnMenu = document.querySelectorAll('.js-btn-menu');
+const menuSite = document.querySelectorAll('.js-menu');
+
+btnMenu.forEach((btn, index) => {
+    btn.addEventListener('click', (event) => {
+        event.preventDefault();
+         
+        menuSite.forEach(menuItem => {
+            menuItem.classList.remove('active');
+            menuItem.addEventListener('mouseleave', () => {
+                menuItem.classList.remove('active');
+                
+                btnMenu.forEach(itemBtn => {
+                    itemBtn.classList.remove('active'); 
+                })
+            })
+        })
+
+        btnMenu.forEach(itemBtn => {
+            itemBtn.classList.remove('active'); 
+        })
+
+        btn.classList.add('active');
+        menuSite[index].classList.add('active');
+    })
+})
