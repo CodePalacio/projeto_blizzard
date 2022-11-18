@@ -1,4 +1,5 @@
 .s-hero{
+    position: relative;
     .slide-thumbnail{
         position: absolute;
         top: 24.1rem;
@@ -148,6 +149,100 @@
         }
     }
     
+    @media(max-width: 1200px){
+        .slide-thumbnail{
+            left: 1%;
+        }
+    }
+    @media(max-width: 991px){
+        .slide-principal{
+            .swiper-wrapper{
+                .swiper-slide{
+                    &.slide02{
+                        .left-content{
+                            max-width: 46.2rem;
+                            h2{
+                                font-size: 5.8rem;
+                            }
+                        }
+                    }
+                    .container{
+                        .left-content{
+                            margin-left: 0;
+                            
+                        }
+                        .right-content{
+                            position: absolute;
+                            right: 0;
+                            .logo{
+                                margin-top: -5.3rem;
+                                
+                            }
+                            .video{
+                                padding-top: 13rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .slide-thumbnail{
+            left: 1.5rem;
+            top: initial;
+            bottom: 10.5rem;
+            height: 4.8rem;
+
+        }
+    }
+    @media(max-width: 480px){
+        .slide-principal{
+            height: 62.2rem;
+            .swiper-wrapper{
+                .swiper-slide{
+                    padding-top: 13.1rem;
+                    &.slide01{
+                        background-position-x: 38%;
+                    }
+                    &.slide02{
+                        background-position-x: 65%;
+                        .left-content{
+                            p{
+                                width: 100%;
+                                max-width: 34rem;
+                            }
+                        }
+                    }
+                    &.slide03{
+                        background-position-x: 63%;
+                        .left-content{
+                            p{
+                                max-width: 26rem;
+                            }
+                        }
+                    }
+                    .container{
+
+                        .left-content{
+                            
+                            h2{
+                                font-size: 4rem;
+                                max-width: 28rem;
+                            }  
+                            button{
+                                max-width: 22rem;
+                            }
+                        }
+                        .right-content{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .slide-thumbnail{
+            bottom: 6.5rem;
+        }
+    }
 }
 
 .s-games{

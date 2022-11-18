@@ -8,6 +8,7 @@ header{
     border-bottom: 0.15rem solid rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
+
     .container{
         @include flex(center, space-between, row)
     }
@@ -62,6 +63,43 @@ header{
         .btn{
             &:not(:first-child){
                 margin-left: 1.6rem;
+            }
+        }
+        button{
+            display: none;
+        }
+    }
+
+    @media(max-width: 991px){
+        .left-container{
+            nav{
+                display: none;
+ 
+            }
+        }
+        .right-container{
+            width: 100%;
+            max-width: 34.5rem;
+            button{
+                display: block;
+                margin-left: 6rem;
+            }
+        }
+    }
+    @media(max-width: 560px){
+        height: 8rem;
+        .left-container{
+            .logo{
+                max-width: 6.9rem;
+            }
+        }
+        
+        .right-container{
+            .btn{
+                display: none;
+            }
+            button{
+                margin-left: 25rem;
             }
         }
     }
@@ -165,6 +203,11 @@ header{
                 }
             }
         }
+    }
+
+    @media(max-width:560px){
+        display: none;
+
     }
 }
 
