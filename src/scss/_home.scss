@@ -340,6 +340,66 @@
             }
         }
     }
+    @media(max-width: 991px){
+        padding-bottom: 7.5rem;
+        .top{
+            padding-bottom: 5.8rem;
+            .left-top{
+                span{
+                    display: none;
+                }
+            }
+        }
+        .tab-games-content{
+            .tab-panel-games{
+                &.active{
+                    grid-template-columns: repeat(3,1fr);
+                    max-width: 67.5rem;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    @media(max-width: 560px){
+        padding-top: 5.5rem;
+        padding-bottom: 6rem;
+       .top{
+        .left-top{
+            h2{
+                font-size: 2.8rem;
+            }
+        }
+        .right-top{
+            .js-nav-games{
+                display: none;
+            }
+        }
+       }
+       .tab-games-content{
+        .tab-panel-games{
+            &.active{
+                grid-template-columns: repeat(2,1fr);
+                gap: 2.4rem 1.6rem;
+                .game-card{
+                    .info{
+                        display: none;
+                    }
+                }
+            }
+            .card-all-games{
+                height: 23.2rem;
+                span{
+                    font-weight: bold;
+                    margin-top: 1.5rem;
+                    font-size: 1.4rem;
+                    img{
+                        display: none;
+                    }
+                }
+            }
+       }
+    }
+    }
 }
 
 .s-download{
@@ -421,6 +481,39 @@
             right: 5.3rem;
             top: 29.5rem;
             animation: float 6s ease-in-out infinite;
+        }
+    }
+    @media(max-width:991px){
+        .text-left{
+            max-width: 30rem; 
+            margin-left: 4rem;
+        }
+        .image{
+            right: -35rem;
+        }
+    }
+    @media(max-width:560px){
+        height: auto;
+        padding-bottom: 5rem;
+        .text-left{
+            padding-top: 6rem;
+            padding-bottom: 3rem;
+            h2{
+                font-size: 2.8rem;
+
+            }
+            
+        }
+        .image{
+            position: relative;
+            top: 0;
+            left: 0;
+            height: 27rem;
+            .img-sm{
+                right: 0;
+                top: 100px;
+                max-width: 27.6rem;
+            }
         }
     }
 }

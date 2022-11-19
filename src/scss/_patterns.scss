@@ -68,4 +68,27 @@
             opacity: 0.8;
         }
     }
+    @media(max-width: 1200px){
+        .image{
+            height: 34.3rem;
+            margin-bottom: 1.2rem;
+        }
+    }
+    @media(max-width: 991px){
+        .image{
+            height: 28rem;
+            margin-bottom: 1.2rem;
+        }
+        .info{
+            h3{
+                line-height: 2.3rem ;
+            }
+        }
+    }
+    @media(max-width: 560px){
+        .image{
+            height: 23.2rem;
+            margin-bottom: 0;
+        }
+    }
 }
