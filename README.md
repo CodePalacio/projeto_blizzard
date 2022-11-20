@@ -7,8 +7,7 @@
     https://blizzard-store.netlify.app/
 </p>
 
-<img justify="center"
-     src="share-banner.jpg" alt="Banner do projeto" height="400">&nbsp;&nbsp;
+<img src="share-banner.jpg" alt="Banner do projeto" height="400">&nbsp;&nbsp;
 <br>
 <br>
 
