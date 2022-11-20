@@ -1,3 +1,5 @@
+// Swiper section slides
+
 const slide_thumbnail = new Swiper('.slide-thumbnail', {
     slidesPerView: 5,
     direction: 'vertical',
@@ -42,6 +44,9 @@ const slide_hero = new Swiper('.slide-principal', {
     }
 });
 
+
+// Filtros section games
+
 const allFilters = document.querySelectorAll('.js-nav-games li a');
 const tabPanel  = document.querySelectorAll('.tab-panel-games')
 
@@ -62,6 +67,9 @@ allFilters.forEach((filter, index) => {
     })
 })
 
+
+// Modal
+
 const btnOpenModal = document.querySelector('.js-open-modal');
 const btnCloseModal = document.querySelector('.js-close');
 
@@ -75,6 +83,9 @@ btnCloseModal.addEventListener('click', () => {
     let tagHtml = document.documentElement;
     tagHtml.classList.remove('show-modal')
 });
+
+
+// Dropdowns
 
 const btnMenu = document.querySelectorAll('.js-btn-menu');
 const menuSite = document.querySelectorAll('.js-menu');
@@ -101,4 +112,4 @@ btnMenu.forEach((btn, index) => {
         btn.classList.add('active');
         menuSite[index].classList.add('active');
     })
-})
+});
