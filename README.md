@@ -1,13 +1,14 @@
 <h1 align="center">
     <br>
-        <img src=".github/github-readme-title.png" alt="Logo King Host">
+        <img src="readme-title.png" alt="Logo Blizzard">
     <br>
 </h1>
 <p align="center"> 👀 Visualize o projeto:
     https://blizzard-store.netlify.app/
 </p>
 
-<img src="share-banner.jpg" alt="Banner do projeto" height="400">&nbsp;&nbsp;
+<img justify="center"
+     src="share-banner.jpg" alt="Banner do projeto" height="400">&nbsp;&nbsp;
 <br>
 <br>
 
