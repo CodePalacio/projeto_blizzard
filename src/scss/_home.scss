@@ -148,6 +148,51 @@
             }
         }
     }
+
+    .swiper-progress-bar{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        display: block;
+        z-index: 3;
+        .slide-progress-bar{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 3px;
+            width: auto;
+            opacity: 0;
+            display: block;
+            &:after{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 0;
+                height: 100%;
+                transition: width .1s linear;
+                background-color: $primary-default;
+
+
+            }
+        }
+        &.active{
+            .slide-progress-bar{
+                opacity: 1;
+            }
+        }
+        &.animate{
+            .slide-progress-bar{
+                &:after{
+                    width: 100%;
+                    transition: width 5s linear;
+
+                }
+            }
+        }
+    }
     
     @media(max-width: 1200px){
         .slide-thumbnail{
