@@ -4,7 +4,7 @@
     <br>
 </h1>
 <p align="center"> 👀 Visualize o projeto:
-    https://blizzard-store.netlify.app/
+    https://blizzard-redesign.netlify.app/
 </p>
 
 <img src="share-banner.jpg" alt="Banner do projeto" height="400">&nbsp;&nbsp;
